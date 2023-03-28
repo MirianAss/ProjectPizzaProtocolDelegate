@@ -24,4 +24,11 @@ class CellPizzaTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setupPizza(pizza: PizzaElement?) {
+        lblPizzaCell.text = pizza?.name ?? ""
+        let urlImage = URL(string: pizza?.imageURL ?? "")
+        imagePizzaCell.sd_setImage(with: urlImage)
+            
+    }
+    
 }
