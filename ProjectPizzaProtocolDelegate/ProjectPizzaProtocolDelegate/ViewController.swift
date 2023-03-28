@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBAction func btStart(_ sender: Any) {
         if let screen = self.storyboard?.instantiateViewController(withIdentifier: "navigation") {
             
-            screen.present(screen, animated: true)
+            self.present(screen, animated: true)
         }
     }
     
