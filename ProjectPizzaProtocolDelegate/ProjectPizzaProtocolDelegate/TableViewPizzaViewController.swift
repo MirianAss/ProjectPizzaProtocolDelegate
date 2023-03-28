@@ -25,6 +25,7 @@ class TableViewPizzaViewController: UIViewController {
         
         tableView.register(UINib(nibName: "CellPizzaTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         tableView.dataSource = self
+        tableView.delegate = self
         
     }
     
@@ -57,5 +58,15 @@ extension TableViewPizzaViewController: UITableViewDataSource {
         }
         
         return UITableViewCell()
+    }
+}
+extension TableViewPizzaViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let screen = self.storyboard?.instantiateViewController(withIdentifier: "descriptionPizza") as? ScreenDescriptionPizzaViewController {
+            
+            screen.descriptionPizza = self.arrayPizza?[indexPath.row]
+            
+            self.navigationController?.pushViewController(screen, animated: true)
+        }
     }
 }
