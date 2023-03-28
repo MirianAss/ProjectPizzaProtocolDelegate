@@ -19,6 +19,7 @@
 		3A78F93329D3397E00C02C43 /* CellPizzaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A78F93129D3397E00C02C43 /* CellPizzaTableViewCell.xib */; };
 		3A78F93529D33C4100C02C43 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78F93429D33C4100C02C43 /* Request.swift */; };
 		3A78F93729D33C7100C02C43 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78F93629D33C7100C02C43 /* Pizza.swift */; };
+		3A78F93929D3562600C02C43 /* ScreenDescriptionPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78F93829D3562600C02C43 /* ScreenDescriptionPizzaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3A78F93129D3397E00C02C43 /* CellPizzaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellPizzaTableViewCell.xib; sourceTree = "<group>"; };
 		3A78F93429D33C4100C02C43 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		3A78F93629D33C7100C02C43 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		3A78F93829D3562600C02C43 /* ScreenDescriptionPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDescriptionPizzaViewController.swift; sourceTree = "<group>"; };
 		BE8D8C76E780682CB67F3DE0 /* Pods_ProjectPizzaProtocolDelegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectPizzaProtocolDelegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7D93B7987833A84A23A66D /* Pods-ProjectPizzaProtocolDelegate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectPizzaProtocolDelegate.release.xcconfig"; path = "Target Support Files/Pods-ProjectPizzaProtocolDelegate/Pods-ProjectPizzaProtocolDelegate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				3A78F91A29D3247D00C02C43 /* AppDelegate.swift */,
 				3A78F91C29D3247D00C02C43 /* SceneDelegate.swift */,
 				3A78F92029D3247D00C02C43 /* Main.storyboard */,
+				3A78F93829D3562600C02C43 /* ScreenDescriptionPizzaViewController.swift */,
 				3A78F93129D3397E00C02C43 /* CellPizzaTableViewCell.xib */,
 				3A78F93629D33C7100C02C43 /* Pizza.swift */,
 				3A78F93429D33C4100C02C43 /* Request.swift */,
@@ -228,6 +231,7 @@
 				3A78F93229D3397E00C02C43 /* CellPizzaTableViewCell.swift in Sources */,
 				3A78F92F29D330F300C02C43 /* TableViewPizzaViewController.swift in Sources */,
 				3A78F91B29D3247D00C02C43 /* AppDelegate.swift in Sources */,
+				3A78F93929D3562600C02C43 /* ScreenDescriptionPizzaViewController.swift in Sources */,
 				3A78F91D29D3247D00C02C43 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
