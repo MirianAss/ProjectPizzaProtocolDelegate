@@ -1,5 +1,5 @@
 //
-//  TableViewPizzaViewController.swift
+//  ListPizzaViewController.swift
 //  ProjectPizzaProtocolDelegate
 //
 //  Created by Mirian Santana on 28/03/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableViewPizzaViewController: UIViewController {
+class ListPizzaViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -16,56 +16,48 @@ class TableViewPizzaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupTableView()
         myRequest()
     }
     
     func setupTableView() {
-        
         tableView.register(UINib(nibName: "CellPizzaTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         tableView.dataSource = self
         tableView.delegate = self
-        
     }
     
     func myRequest() {
-        
         request.delegate = self
         request.requestPizza{arrayPizza in
-            
         }
     }
 }
-extension TableViewPizzaViewController: RequestDelegate {
-    
+
+extension ListPizzaViewController: RequestDelegate {
     func finishRequest(arrayDePizza: Pizza?) {
         self.arrayPizza = arrayDePizza
         self.tableView.reloadData()
     }
 }
-extension TableViewPizzaViewController: UITableViewDataSource {
+
+extension ListPizzaViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayPizza?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CellPizzaTableViewCell {
-            
             cell.setupPizza(pizza: self.arrayPizza?[indexPath.row])
-            
             return cell
         }
-        
         return UITableViewCell()
     }
 }
-extension TableViewPizzaViewController: UITableViewDelegate {
+
+extension ListPizzaViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let screen = self.storyboard?.instantiateViewController(withIdentifier: "descriptionPizza") as? ScreenDescriptionPizzaViewController {
-            
+        if let screen = self.storyboard?.instantiateViewController(withIdentifier: "descriptionPizza") as? DescriptionPizzaViewController {
             screen.descriptionPizza = self.arrayPizza?[indexPath.row]
-            
             self.navigationController?.pushViewController(screen, animated: true)
         }
     }

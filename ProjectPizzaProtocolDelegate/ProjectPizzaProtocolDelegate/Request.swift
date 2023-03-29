@@ -30,5 +30,4 @@ class Request: NSObject {
             self.delegate?.finishRequest(arrayDePizza: pizza)
         }
     }
-
 }

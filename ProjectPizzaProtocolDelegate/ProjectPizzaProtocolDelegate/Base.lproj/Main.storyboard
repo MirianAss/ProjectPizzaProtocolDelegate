@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
-        <!--Screen Description Pizza View Controller-->
+        <!--Description Pizza View Controller-->
         <scene sceneID="Lrc-8z-SvH">
             <objects>
-                <viewController storyboardIdentifier="descriptionPizza" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tej-vn-1g2" customClass="ScreenDescriptionPizzaViewController" customModule="ProjectPizzaProtocolDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="descriptionPizza" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tej-vn-1g2" customClass="DescriptionPizzaViewController" customModule="ProjectPizzaProtocolDelegate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Gc-7r-mGe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="772" y="-2"/>
         </scene>
-        <!--Table View Pizza View Controller-->
+        <!--List Pizza View Controller-->
         <scene sceneID="MIR-S8-Ubt">
             <objects>
-                <viewController id="UPt-mf-ypq" customClass="TableViewPizzaViewController" customModule="ProjectPizzaProtocolDelegate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UPt-mf-ypq" customClass="ListPizzaViewController" customModule="ProjectPizzaProtocolDelegate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x8n-xM-ugk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A9s-dR-aRO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1506" y="-2"/>
+            <point key="canvasLocation" x="1532" y="-2"/>
         </scene>
     </scenes>
     <resources>
