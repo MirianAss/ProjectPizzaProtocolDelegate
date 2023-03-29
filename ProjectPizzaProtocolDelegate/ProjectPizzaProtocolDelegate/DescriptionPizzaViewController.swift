@@ -61,4 +61,8 @@ class DescriptionPizzaViewController: UIViewController {
     @IBAction func btMenu(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func btHomeScreen(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
 }
